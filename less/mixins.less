@@ -45,7 +45,20 @@
 
 
   &:hover {
-background-color: @btn-fountcolor;
-color: @btn-color;
+animation-name: change;
+animation-duration: 2s;
   }
+
+  @keyframes change {
+    from {
+      background-color: @btn-color;
+      color: @btn-fountcolor;
+    }
+    to {
+      background-color: @btn-fountcolor;
+  color: @btn-color;
+    }
+  }
+
 }
+

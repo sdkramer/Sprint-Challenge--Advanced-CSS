@@ -294,8 +294,18 @@ header img {
   }
 }
 .home .walk .walk-text .btn:hover {
-  background-color: white;
-  color: #171f34;
+  animation-name: change;
+  animation-duration: 2s;
+}
+@keyframes change {
+  from {
+    background-color: #171f34;
+    color: white;
+  }
+  to {
+    background-color: white;
+    color: #171f34;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
