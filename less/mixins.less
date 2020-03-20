@@ -3,7 +3,7 @@
 
 
 //escape variable
-@mobile: ~"(max-width: 500px)";
+@phone: ~"(max-width: 500px)";
 
 // Mixins Here
 
@@ -15,7 +15,7 @@
   padding: 2%;
 }
 
-.anchot-layout(){
+.anchor-layout(){
   display: flex;
   justify-content: space-between;
   width: 50%;
@@ -34,6 +34,13 @@
   border-radius: 10px;
   text-align: center;
   padding-top: 2.3%;
+
+  @media @phone {
+    width: 100%;
+    border-radius: 5px;
+    height: 60px;
+    padding-top: 4%;
+  }
 
 
 
