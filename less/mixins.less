@@ -1,1 +1,64 @@
+//Variables
+
+
+
+//escape variable
+@phone: ~"(max-width: 500px)";
+
 // Mixins Here
+
+.nav-layout(){
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  background: #F8F8FF;
+  padding: 2%;
+}
+
+.anchor-layout(){
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+//Parametric mixin for button
+
+.trip-btn(@btn-color, @btn-fountcolor, @btn-fontsize) {
+  display: block;
+  background-color: @btn-color;
+  color: @btn-fountcolor;
+  margin: 0 10px 20px;
+  width: 150px;
+  height: 40px;
+  font-size: @btn-fontsize;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 2.3%;
+
+  @media @phone {
+    width: 100%;
+    border-radius: 5px;
+    height: 60px;
+    padding-top: 4%;
+  }
+
+
+
+  &:hover {
+animation-name: change;
+animation-duration: 2s;
+  }
+
+  @keyframes change {
+    from {
+      background-color: @btn-color;
+      color: @btn-fountcolor;
+    }
+    to {
+      background-color: @btn-fountcolor;
+  color: @btn-color;
+    }
+  }
+
+}
+

@@ -1,5 +1,10 @@
 // Home Content
 
+header img {
+  border-radius: 10px;
+  margin: 20px 2.5%;
+}
+
 .home {
 
   .intro {
@@ -19,11 +24,31 @@
     flex-wrap: wrap;
     width: 100%;
 
+    .blast {
+      @media @phone {
+        width: 100%;
+      }
+    }
+
+    .sky {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    .launch {
+      @media @phone {
+        display: none;
+      }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+
     }
   }
 
@@ -46,11 +71,24 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      padding: 20px 10px;
+    }
+
     .walk-text {
       width: 50%;
 
+      @media @phone {
+        width: 100%;
+      }
+
       h3 {
         margin-bottom: 10px;
+
+        @media @phone {
+          padding-top: 5%;
+        }
       }
 
       p {
@@ -58,12 +96,19 @@
       }
 
       .btn {
+        .trip-btn(rgb(23, 31, 52), white, 2rem)
+
+ 
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+      }
       
       img {
         width: 100%;
