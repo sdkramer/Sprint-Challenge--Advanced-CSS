@@ -174,7 +174,7 @@ h1 {
 .anchors {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 40%;
 }
 @media (max-width: 500px) {
   .anchors {
@@ -199,6 +199,11 @@ footer {
 header img {
   border-radius: 10px;
   margin: 20px 2.5%;
+}
+@media (max-width: 500px) {
+  header img {
+    width: 475px;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -287,10 +292,11 @@ header img {
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
-    width: 100%;
+    width: 475px;
     border-radius: 5px;
     height: 60px;
     padding-top: 4%;
+    margin: 0;
   }
 }
 .home .walk .walk-text .btn:hover {
@@ -313,7 +319,8 @@ header img {
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
-    width: 100%;
+    width: 475px;
+    margin: 1%;
   }
 }
 .home .walk .walk-img img {
