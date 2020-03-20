@@ -236,6 +236,22 @@ header img {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  display: block;
+  background-color: black;
+  color: white;
+  margin: 0 10px 20px;
+  width: 150px;
+  height: 40px;
+  font-size: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 2.3%;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: black;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;

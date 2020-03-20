@@ -1,3 +1,10 @@
+//Variables
+
+
+
+//escape variable
+@mobile: ~"(max-width: 500px)";
+
 // Mixins Here
 
 .nav-layout(){
@@ -12,4 +19,26 @@
   display: flex;
   justify-content: space-between;
   width: 50%;
+}
+
+//Parametric mixin for button
+
+.trip-btn(@btn-color, @btn-fountcolor, @btn-fontsize) {
+  display: block;
+  background-color: @btn-color;
+  color: @btn-fountcolor;
+  margin: 0 10px 20px;
+  width: 150px;
+  height: 40px;
+  font-size: @btn-fontsize;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 2.3%;
+
+
+
+  &:hover {
+background-color: @btn-fountcolor;
+color: @btn-color;
+  }
 }
